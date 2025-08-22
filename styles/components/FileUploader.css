@@ -1,0 +1,23 @@
+.blob-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
+    animation: blob 10s infinite alternate;
+    z-index: -1;
+  }
+  
+  @keyframes blob {
+    0% {
+      transform: translate(0, 0) scale(1);
+    }
+    50% {
+      transform: translate(-20px, -20px) scale(1.1);
+    }
+    100% {
+      transform: translate(20px, 20px) scale(1);
+    }
+  }
+  
